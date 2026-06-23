@@ -6,7 +6,7 @@
     <i data-lucide="alert-triangle" style="flex-shrink: 0; margin-top: 2px;"></i>
     <div>
         <strong>ZFS Detected:</strong> Displayed values are dataset-level stats and may not reflect true pool capacity.
-        <a href="/settings#cache" style="color: var(--plex-orange);">Set Cache Drive Size manually</a> for accurate reporting.
+        <a href="/settings/#cache" style="color: var(--plex-orange);">Set Cache Drive Size manually</a> for accurate reporting.
     </div>
 </div>
 {% endif %}
@@ -244,7 +244,7 @@
     </div>
     <div class="card-body">
         <div class="breakdown-grid">
-            <a href="/cache?source=ondeck" class="breakdown-card breakdown-ondeck">
+            <a href="/cache/?source=ondeck" class="breakdown-card breakdown-ondeck">
                 <div class="breakdown-header">
                     <i data-lucide="play-circle"></i>
                     <span>OnDeck</span>
@@ -259,7 +259,7 @@
                 </div>
                 <div class="breakdown-percent">{{ data.breakdown.ondeck.percent }}% of cache</div>
             </a>
-            <a href="/cache?source=watchlist" class="breakdown-card breakdown-watchlist">
+            <a href="/cache/?source=watchlist" class="breakdown-card breakdown-watchlist">
                 <div class="breakdown-header">
                     <i data-lucide="bookmark"></i>
                     <span>Watchlist</span>
@@ -275,7 +275,7 @@
                 <div class="breakdown-percent">{{ data.breakdown.watchlist.percent }}% of cache</div>
             </a>
             {% if data.breakdown.other.count > 0 %}
-            <a href="/cache?source=other" class="breakdown-card breakdown-other">
+            <a href="/cache/?source=other" class="breakdown-card breakdown-other">
                 <div class="breakdown-header">
                     <i data-lucide="help-circle"></i>
                     <span>Other</span>

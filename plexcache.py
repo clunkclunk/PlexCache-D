@@ -126,7 +126,9 @@ def run_web_ui():
         host=host,
         port=port,
         reload=reload_enabled,
-        log_level="info"
+        log_level="info",
+        proxy_headers=True,
+        forwarded_allow_ips="*",
     )
     return 0
 
